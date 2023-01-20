@@ -8,8 +8,55 @@
     <title>landingpage</title>
 </head>
 <body>
-    
-    
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1><a href="#">Logo</a></h1>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">Serviços</a></li>
+            <li class="nav-link"><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="content-home">
+            <h1 class="title-home">Exemplo de título</h1>
+            <h2 class="subtitle-home">subtítulo</h2>
+            <p class="text-home">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit ratione autem quod recusandae incidunt natus repellendus sed quis, doloremque ducimus commodi culpa reiciendis! Odio in harum quis quisquam enim?</p>
+        </div>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Cadastro</legend>
+
+                <div class="camp">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="camp">
+                    <label for="date">Data de nasc.:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="camp">
+                    <label for="email">email:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="camp">
+                    <label for="name">Senha:</label>
+                    <input type="password">
+                    <img src="img/incon-svg/iconmonstr-eye-thin.svg" alt="">
+                    <img src="img/incon-svg/iconmonstr-eye-off-thin.svg" alt="">
+                </div>
+                <div class="camp">
+                    <label for="name">Confirmar Senha:</label>
+                    <input type="password">
+                    <img src="img/incon-svg/iconmonstr-eye-thin.svg" alt="">
+                    <img src="img/incon-svg/iconmonstr-eye-off-thin.svg" alt="">
+                </div>
+            </fieldset>
+            <button type="reset">Enviar</button>
+        </form>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
