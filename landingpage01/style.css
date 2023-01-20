@@ -29,7 +29,11 @@ body{
     margin-left: 30px;
     font-size: 1.8rem;
     text-decoration: none;
-    color: rgb(10, 223, 152);
+    color: rgb(18, 165, 74);
+    transition: 0.5s;
+}
+.logo h1 a:hover{
+    color: rgb(23, 196, 60);
 }
 .nav-links{
     list-style: none;
@@ -41,13 +45,76 @@ body{
     font-weight: 700;
     text-decoration: none;
     color: aliceblue;
+    transition: 0.3s;
 }
 .nav-link:not(:last-child){
     margin-right: 30px;
+}
+.nav-link a:hover{
+    color: rgb(24, 211, 71);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 60px);
+}
+.content-home{
+    width: 500px;
+}
+.title-home{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif
+}
+.subtitle-home{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.text-home{
+    font-size: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+.camp{
+    margin-bottom: 20px;
+}
+.camp input{
+    margin-left: 10px;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 img{
     height: 20px;
     background-color: aliceblue;
     cursor: pointer;
+}
+
+button{
+    margin-top: 30px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    font-weight: 700;
+    background-color: aliceblue;
+    transition: 0.3s;
+}
+button:hover{
+    background: linear-gradient( -35deg, rgb(25, 104, 15), rgb(85, 221, 73));
+    color: aliceblue;
 }
