@@ -58,9 +58,18 @@ function hideConfirmPassword(){
     const inputs = document.querySelectorAll('.input')
     const spans = document.querySelectorAll('.span-required')
     const emailRegex = /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/gm
+    
 
-    form.addEventListener('reset', (event) => {
+    function resetForm(){
+
+        if(!inputs.value == ''){
+            inputs.value = ''
+        }
+    }
+
+    form.addEventListener('submit', (event) => {
         event.preventDefault()
+
         nameValidate()
         passwordValidate()
         comparePassword()
@@ -86,26 +95,26 @@ function hideConfirmPassword(){
     }
 
     function emailValidate(){
-        if(!emailRegex.test(inputs[2].value)){
-            setError(2)
+        if(!emailRegex.test(inputs[1].value)){
+            setError(1)
         }else{
-            removeError(2)
+            removeError(1)
         }
     }
 
     function passwordValidate(){
-        if(inputs[3].value.length <= 6){
-            setError(3)
+        if(inputs[2].value.length  < 6){
+            setError(2)
         } else{
-            removeError(3)
+            removeError(2)
             comparePassword()
         }
     }
 
     function comparePassword(){
-        if(inputs[3].value == inputs[4].value && inputs[4].value.length >= 6){
-            removeError(4)
+        if(inputs[2].value == inputs[3].value && inputs[3].value.length >= 6){
+            removeError(3)
         }else{
-            setError(4)
+            setError(3)
         }
     }

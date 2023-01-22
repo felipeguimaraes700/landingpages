@@ -37,13 +37,6 @@
                 </div>
                 <div class="camp-container">
                     <div class="camp">
-                        <label for="date">Data de nasc.:</label>
-                        <input type="date" class="input" id="date">
-                    </div>
-                    <span class="span-required">Deve ser preenchido!</span>
-                </div>
-                <div class="camp-container">
-                    <div class="camp">
                         <label for="email">email:</label>
                         <input type="email" id="email" class="input" placeholder="Digite seu email..." oninput="emailValidate()">
                     </div>
@@ -68,7 +61,7 @@
                     <span class="span-required">A senha não está igual!</span>
                 </div>
             </fieldset>
-            <button type="reset">Enviar</button>
+            <button type="submit" id="enviar" onclick="resetForm()">Enviar</button>
         </form>
     </section>
     <footer>

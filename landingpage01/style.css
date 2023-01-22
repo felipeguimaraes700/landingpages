@@ -103,10 +103,14 @@ fieldset{
 .camp input{
     margin-left: 10px;
     outline: none;
+    border: black;
     padding: 5px;
     border-bottom: 2px solid white;
     color: aliceblue;
     background-color: rgba(240, 248, 255, 0);
+}
+.camp input:focus{
+    border-bottom: 2px solid rgb(37, 179, 32);
 }
 
 #eyePasswordOpen{
