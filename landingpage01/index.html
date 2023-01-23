@@ -26,26 +26,32 @@
         </div>
         <form action="" method="get" id="form">
             <fieldset>
-                <legend>Cadastro</legend>
+                <legend>CADASTRO</legend>
 
                 <div class="camp-container">
                     <div class="camp">
-                        <label for="name">Nome:</label>
-                        <input type="text" class="input" id="name" placeholder="Digite seu nome..." oninput="nameValidate()">
+                        <div class="camp-content">
+                            <label for="name">Nome:</label>
+                            <input type="text" class="input" id="name" placeholder="Digite seu nome..." oninput="nameValidate()">
+                        </div>
                     </div>
                     <span class="span-required">O nome deve ter no min. 3 caracteres!</span>
                 </div>
                 <div class="camp-container">
                     <div class="camp">
-                        <label for="email">email:</label>
-                        <input type="email" id="email" class="input" placeholder="Digite seu email..." oninput="emailValidate()">
+                        <div class="camp-content">
+                            <label for="email">email:</label>
+                            <input type="email" id="email" class="input" placeholder="Digite seu email..." oninput="emailValidate()">
+                        </div>
                     </div>
                     <span class="span-required">Email inválido!</span>
                 </div>
                 <div class="camp-container">
                     <div class="camp">
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" class="input" placeholder="Digite sua senha..." oninput="passwordValidate()">
+                        <div class="camp-content">
+                            <label for="password">Senha:</label>
+                            <input type="password" id="password" class="input" placeholder="Digite sua senha..." oninput="passwordValidate()">
+                        </div>
                         <img src="img/incon-svg/iconmonstr-eye-thin.svg" alt="" id="eyePasswordOpen" onclick="eyePassword()">
                         <img src="img/incon-svg/iconmonstr-eye-off-thin.svg" alt="" id="eyePasswordClose" onclick="eyePassword()">
                     </div>
@@ -53,8 +59,10 @@
                 </div>
                 <div class="camp-container">
                     <div class="camp">
-                        <label for="confirm-password">Confirmar Senha:</label>
-                        <input type="password" id="confirm-password" class="input" placeholder="Confirme sua senha..." oninput="comparePassword()">
+                        <div class="camp-content">
+                            <label for="confirm-password">Confirmar Senha:</label>
+                            <input type="password" id="confirm-password" class="input" placeholder="Confirme sua senha..." oninput="comparePassword()">
+                        </div>
                         <img src="img/incon-svg/iconmonstr-eye-thin.svg" alt="" id="eyeConfirmPasswordOpen" onclick="eyeConfirmPassword()">
                         <img src="img/incon-svg/iconmonstr-eye-off-thin.svg" alt="" id="eyeConfirmPasswordClose" onclick="eyeConfirmPassword()">
                     </div>
