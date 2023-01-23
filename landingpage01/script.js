@@ -1,19 +1,15 @@
-
-const menuHamburguer = document.getElementById('open')
-const closeMenu = document.getElementById('close')
-let menuNavigation = document.getElementById('navigationMobile')
-
+// menu ////////////////////////////////////////////////
 function openMenu(){
-    if(menuHamburguer.style.display == 'block' ){
-        menuHamburguer.style.display = 'none'
-        closeMenu.style.display = 'block'
-        menuNavigation.style.height = '100vh'
-    }else{
-        menuHamburguer.style.display = 'block'
-        closeMenu.style.display = 'none'
-        menuNavigation.style.height = '0'
-    }
+    document.getElementById('open').style.display='none'
+    document.getElementById('close').style.display='block'
+    document.getElementById('navigationMobile').style.height = '100vh'
 }
+function closeMenu(){
+    document.getElementById('open').style.display='block'
+    document.getElementById('close').style.display='none'
+    document.getElementById('navigationMobile').style.height = '0'
+}
+
 
 // compare password //////////////////////////////////////////////
 
