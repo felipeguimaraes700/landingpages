@@ -252,6 +252,12 @@ footer p{
     .text-home{
         font-size: 1rem;
     }
+    .nav-link-mobile{
+        font-size: 2rem;
+    }
+    .nav-link-mobile:not(:last-child){
+        margin-bottom: 100px;
+    }
     .camp img{
         margin-bottom: -20px;
     }
