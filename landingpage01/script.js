@@ -58,21 +58,17 @@ function hideConfirmPassword(){
     const inputs = document.querySelectorAll('.input')
     const spans = document.querySelectorAll('.span-required')
     const emailRegex = /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/gm
-    
-
-    function resetForm(){
-
-        if(!inputs.value == ''){
-            inputs.value = ''
-        }
-    }
+    const sucess = document.getElementById('cadastrado')
 
     form.addEventListener('submit', (event) => {
         event.preventDefault()
+        
 
         nameValidate()
         passwordValidate()
         comparePassword()
+        
+        
     })
 
     function setError(index){
@@ -86,7 +82,6 @@ function hideConfirmPassword(){
     }
 
     function nameValidate(){
-
         if(inputs[0].value.length < 3){
             setError(0)
         }else{
@@ -117,4 +112,4 @@ function hideConfirmPassword(){
         }else{
             setError(3)
         }
-    }
+    } 
