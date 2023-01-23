@@ -1,4 +1,22 @@
 
+const menuHamburguer = document.getElementById('open')
+const closeMenu = document.getElementById('close')
+let menuNavigation = document.getElementById('navigationMobile')
+
+function openMenu(){
+    if(menuHamburguer.style.display == 'block' ){
+        menuHamburguer.style.display = 'none'
+        closeMenu.style.display = 'block'
+        menuNavigation.style.height = '100vh'
+    }else{
+        menuHamburguer.style.display = 'block'
+        closeMenu.style.display = 'none'
+        menuNavigation.style.height = '0'
+    }
+}
+
+// compare password //////////////////////////////////////////////
+
 let password = document.getElementById('password')
 let eyePasswordOpen = document.getElementById('eyePasswordOpen')
 let eyePasswordClose = document.getElementById('eyePasswordClose')

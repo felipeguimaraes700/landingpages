@@ -19,7 +19,8 @@ body{
     font-family: 'Ubuntu',sans-serif
 }
 .nav-bar{
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: rgba(0, 0, 0, 0.425);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,6 +53,47 @@ body{
 }
 .nav-link a:hover{
     color: rgb(24, 211, 71);
+}
+.menu {
+    display: none;
+}
+.menu img{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 30px;
+    height: 40px;
+    display: none;
+}
+#close{
+    display: none;
+}
+
+.menu-navigation{
+    background-color: rgba(0, 0, 0, 0.425);
+    backdrop-filter: blur(3px);
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    height: 0;
+    transition: ease-in-out 0.5s;
+}
+.nav-links-mobile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.nav-link-mobile{
+    font-size: 1.5rem;
+    list-style: none;
+}
+.nav-link-mobile:not(:last-child){
+    margin-bottom: 40px;
+}
+.nav-link-mobile a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
 }
 .home{
     display: flex;
@@ -128,7 +170,7 @@ fieldset{
     display: none;
 }
 
-img{
+.camp img{
     height: 20px;
     background-color: white;
     cursor: pointer;
@@ -189,6 +231,12 @@ footer p{
     footer p{
         margin-top: 100px;
         margin-bottom: 15px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu img{
+        display: block;
     }
 }
 
