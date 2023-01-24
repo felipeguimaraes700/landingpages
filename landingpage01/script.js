@@ -3,11 +3,13 @@ function openMenu(){
     document.getElementById('open').style.display='none'
     document.getElementById('close').style.display='block'
     document.getElementById('navigationMobile').style.height = '100vh'
+    document.getElementById('form').style.zIndex = '-1'
 }
 function closeMenu(){
     document.getElementById('open').style.display='block'
     document.getElementById('close').style.display='none'
     document.getElementById('navigationMobile').style.height = '0'
+    document.getElementById('form').style.zIndex = '0'
 }
 
 
